@@ -53,16 +53,13 @@ export default function Form({ isEdit }) {
           setApiError(errorData.message || "Failed to update startup");
         }
       } else {
-        const response = await fetch(
-          `${import.meta.env.VITE_API_URL}/pcs`,
-          {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-            },
-            body: JSON.stringify(formData),
-          }
-        );
+        const response = await fetch(`${import.meta.env.VITE_API_URL}/pcs`, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        });
 
         if (response.ok) {
           const createdPc = await response.json();
