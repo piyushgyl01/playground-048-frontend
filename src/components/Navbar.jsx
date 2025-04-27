@@ -12,7 +12,7 @@ export default function Navbar() {
     <nav className="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
       <div className="container">
         <Link className="navbar-brand" to="/">
-          STARTUPS DATABASE
+          PCs DATABASE
         </Link>
         <button
           className="navbar-toggler"
@@ -29,13 +29,13 @@ export default function Navbar() {
           <ul className="navbar-nav me-auto">
             <li className="nav-item">
               <Link className="nav-link" to="/">
-                Startups
+                PCs
               </Link>
             </li>
             {isAuthenticated && (
               <li className="nav-item">
                 <Link className="nav-link" to="/post">
-                  Add Startup
+                  Add PC
                 </Link>
               </li>
             )}
