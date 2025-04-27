@@ -15,7 +15,6 @@ export default function Home() {
             method: "DELETE",
           }
         );
-        console.log(response)
 
         if (response.ok) {
           refetch();
@@ -25,6 +24,7 @@ export default function Home() {
       }
     }
   }
+
   return (
     <main className="container my-5">
       <div className="d-flex justify-content-between align-items-center mb-4">
