@@ -48,7 +48,7 @@ export default function Details() {
         <div className="card shadow">
           <div className="card-header bg-primary text-white">
             <h2 className="card-title">{data.buildName}</h2>
-            <h6 className="card-subtitle">Builder: {data.buidler}</h6>
+            <h6 className="card-subtitle">Built by: {data.buidler}</h6>
           </div>
           <div className="card-body">
             <p className="card-text">Price: {data.price}</p>
